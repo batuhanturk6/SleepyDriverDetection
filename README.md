@@ -1,90 +1,102 @@
-Detailed README for Sleepy Driver Detection Application
 # Sleepy Driver Detection System
-Real-time driver alertness monitoring to enhance road safety.
 
-Overview
-The Sleepy Driver Detection system is a mobile application designed to minimize fatigue-related accidents by monitoring drivers' alertness using smartphone or external cameras. The system provides real-time fatigue detection, audible and visual alerts, and personalized safety recommendations. It is compatible with Android and iOS devices, offering user-friendly features such as Spotify alarm integration and voice commands via GPT API.
+### Real-time driver alertness monitoring to enhance road safety
 
-Key Features
-Fatigue Detection
+## Overview
+The **Sleepy Driver Detection System** is a mobile application designed to reduce fatigue-related accidents by monitoring driver alertness in real time. Utilizing smartphone or external cameras, the system identifies signs of fatigue, provides audible and visual alerts, and delivers personalized safety recommendations. Compatible with both Android and iOS devices, it offers a user-friendly experience with advanced features such as Spotify alarm integration and voice commands powered by GPT API.
 
-Real-time tracking of eye movements and facial expressions using smartphone or external cameras.
-Alerts drivers when fatigue signs like prolonged eye closure, excessive blinking, or yawning are detected.
-Customizable Alarm System
+---
 
-Integration with Spotify API for personalized alarm sounds.
-Alarm volume, tone, and duration adjustable to driver preferences.
-Driving Data Analysis
+## Key Features
 
-Daily, weekly, and monthly reports on fatigue trends, alarm triggers, and driving performance.
-Heatmaps and graphical analyses for better insights.
-Voice Commands
+### Fatigue Detection
+- **Real-Time Monitoring**: Tracks eye movements and facial expressions using smartphone or external cameras.
+- **Alert System**: Notifies drivers when signs of fatigue, such as prolonged eye closure, excessive blinking, or yawning, are detected.
 
-Hands-free interaction with voice-activated commands powered by GPT API.
-Configure alarms, get driving updates, and receive safety recommendations through simple voice prompts.
-Crash Detection and Emergency Alerts
+### Customizable Alarm System
+- **Spotify Integration**: Allows personalized alarm sounds via the Spotify API.
+- **Adjustable Settings**: Enables users to customize alarm volume, tone, and duration.
 
-Detects crashes based on sudden deceleration or inactivity.
-Sends alerts to emergency contacts with real-time location and severity details.
-Accessibility Features
+### Driving Data Analysis
+- **Detailed Reports**: Generates daily, weekly, and monthly reports on fatigue trends, alarm triggers, and driving performance.
+- **Graphical Insights**: Provides heatmaps and other visual analyses for better understanding of driving behavior.
 
-Larger on-screen buttons and vibration alerts for visually or hearing-impaired users.
-Installation
-Follow these steps to set up the application:
+### Voice Commands
+- **Hands-Free Interaction**: Facilitates voice-activated commands using GPT API.
+- **Convenience**: Configure alarms, receive driving updates, and get safety recommendations with simple voice prompts.
 
-Clone the Repository:
+### Crash Detection and Emergency Alerts
+- **Accident Detection**: Identifies crashes based on sudden deceleration or inactivity.
+- **Emergency Notifications**: Sends alerts with real-time location and severity details to emergency contacts.
 
-bash
-Kodu kopyala
+### Accessibility Features
+- **Enhanced Usability**: Includes larger on-screen buttons and vibration alerts for visually or hearing-impaired users.
+
+---
+
+## Installation
+
+### Step 1: Clone the Repository
+```bash
 git clone https://github.com/batuhanturk6/SleepyDriverDetection.git
 cd SleepyDriverDetection
-Install Dependencies:
-Make sure Node.js is installed, then run:
+```
 
-bash
-Kodu kopyala
+### Step 2: Install Dependencies
+Ensure that Node.js is installed, then run:
+```bash
 npm install
-Environment Configuration:
+```
 
-Add your API keys in a .env file in the root directory.
-Example:
-makefile
-Kodu kopyala
+### Step 3: Environment Configuration
+Create a `.env` file in the root directory and add your API keys:
+```
 SPOTIFY_API_KEY=your_spotify_api_key
 GPT_API_KEY=your_gpt_api_key
+```
 Set up Firebase for crash detection and notifications if applicable.
-Run the Application:
-For Android or iOS:
 
-bash
-Kodu kopyala
+### Step 4: Run the Application
+For Android or iOS, start the app:
+```bash
 npm start
+```
 Open the app using Expo or your preferred emulator.
 
-Build for Production:
+### Step 5: Build for Production
 To create production-ready builds:
-
-bash
-Kodu kopyala
+```bash
 npm run build
-Usage
-Open the app and log in or register.
-Calibrate the camera for optimal fatigue detection.
-Start monitoring your drive.
-Customize alarm settings in the "Settings" section.
-View driving reports under "Reports."
-Contributors
-Arman Yılmazkurt
-Simay Ardıç
-Emirhan Kaya
-Ece Gülyüz
-Batuhan Türk
-For questions or contributions, contact any team member or open a GitHub issue.
+```
 
-License
-This project is licensed under the MIT License.
+---
 
-Project Resources
-GitHub Repository
-Spotify API Documentation
-OpenAI GPT API Documentation
+## Usage
+1. Open the app and log in or register.
+2. Calibrate the camera for optimal fatigue detection.
+3. Start monitoring your drive.
+4. Customize alarm settings in the **Settings** section.
+5. View detailed driving reports under **Reports**.
+
+---
+
+## Contributors
+- **Arman Yılmazkurt**
+- **Simay Ardıç**
+- **Emirhan Kaya**
+- **Ece Güylüz**
+- **Batuhan Türk**
+
+For questions or contributions, contact any team member or open an issue on GitHub.
+
+---
+
+## License
+This project is licensed under the **MIT License**.
+
+---
+
+## Project Resources
+- [GitHub Repository](https://github.com/batuhanturk6/SleepyDriverDetection)
+- [Spotify API Documentation](https://developer.spotify.com/documentation/web-api/)
+- [OpenAI GPT API Documentation](https://platform.openai.com/docs/)
