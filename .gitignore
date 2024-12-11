@@ -1,16 +1,21 @@
-# Build ve derlenmiş dosyalar
+# Dependencies
+node_modules/
 bin/
 obj/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# IDE Files
+.vscode/
+.idea/
+
+# Built files
+dist/
+build/
 *.dll
 *.pdb
-*.exe
-
-# IDE dosyaları
-.vs/
-*.csproj.user
-*.sln.docstates
-
-# İşletim sistemi dosyaları
-.DS_Store
-Thumbs.db
 
