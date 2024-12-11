@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Compiled files
+bin/
+obj/
+
+# Visual Studio
+.vs/
+
+# macOS system files
+.DS_Store
+
+# Logs
+*.log
+
+# Debug files
+*.pdb
+*.dll
+
+# Environment files
+.env
+
