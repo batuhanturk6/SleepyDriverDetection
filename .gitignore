@@ -1,23 +1,16 @@
-# Dependencies
-node_modules/
-
-# Compiled files
+# Build ve derlenmiş dosyalar
 bin/
 obj/
-
-# Visual Studio
-.vs/
-
-# macOS system files
-.DS_Store
-
-# Logs
-*.log
-
-# Debug files
-*.pdb
 *.dll
+*.pdb
+*.exe
 
-# Environment files
-.env
+# IDE dosyaları
+.vs/
+*.csproj.user
+*.sln.docstates
+
+# İşletim sistemi dosyaları
+.DS_Store
+Thumbs.db
 
