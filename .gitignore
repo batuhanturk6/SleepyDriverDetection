@@ -2,20 +2,33 @@
 node_modules/
 bin/
 obj/
+dist/
+build/
 
-# macOS
+# System Files
 .DS_Store
+Thumbs.db
 
 # Logs
 *.log
 
-# IDE Files
+# IDE Specific
+*.idea/
 .vscode/
-.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
-# Built files
-dist/
-build/
-*.dll
+# Temporary and Build Files
+*.tmp
+*.bak
+*.cache
+
+# .NET-specific
 *.pdb
+*.dll
+*.exe
+*.config
+*.csproj.user
 

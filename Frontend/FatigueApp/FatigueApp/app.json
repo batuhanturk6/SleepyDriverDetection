@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "FatigueApp",
+    "slug": "FatigueApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.FatigueApp",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app requires camera access to monitor fatigue and take pictures.",
+        "NSMicrophoneUsageDescription": "This app requires microphone access for audio functionality during fatigue monitoring.",
+        "NSLocationWhenInUseUsageDescription": "This app needs location access to monitor your safety and detect fatigue.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app needs location access to monitor your safety and detect fatigue even in the background."
+      }
+    },
+    "android": {
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "newArchEnabled": true
+  }
+}
