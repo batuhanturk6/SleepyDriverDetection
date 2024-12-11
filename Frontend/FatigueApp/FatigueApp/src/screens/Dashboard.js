@@ -69,7 +69,7 @@ export default function Dashboard({ navigation, route }) {
       case "home":
         break; // Home sayfasında herhangi bir işlem yapılmaz
       case "editProfile":
-        navigation.navigate("EditProfileScreen", { user });
+        navigation.navigate("EditProfileScreen", { Id: user.id });
         break;
       case "logout":
         handleLogout();
@@ -124,7 +124,10 @@ export default function Dashboard({ navigation, route }) {
         {/* Özellikler Bölümü */}
         <Text style={styles.sectionHeader}>Your Features</Text>
         <View style={styles.featuresContainer}>
-          <Card style={styles.featureCard}>
+        <Card
+            style={styles.featureCard}
+            onPress={() => navigation.navigate("SettingsScreen")}
+          >
             <Card.Title
               title="Manage Preferences"
               subtitle="Feature 1"
@@ -132,7 +135,7 @@ export default function Dashboard({ navigation, route }) {
                 <Avatar.Icon {...props} icon="cog" style={styles.featureIcon} />
               )}
             />
-          </Card>
+        </Card>
           <Card style={styles.featureCard}>
             <Card.Title
               title="Track Activities"

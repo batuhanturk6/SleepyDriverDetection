@@ -13,6 +13,8 @@ import {
   Profile,
   CrashDetection,
   FatigueDetection,
+  SettingsScreen,
+  EditProfileScreen
 } from "./src/screens";
 
 const Stack = createStackNavigator();
@@ -50,6 +52,16 @@ export default function App() {
             name="FatigueDetection"
             component={FatigueDetection} // Doğru içe aktarılmış bileşeni kullanın
             options={{ title: "Fatigue Detection" }}
+          />
+          <Stack.Screen
+            name="SettingsScreen"
+            component={SettingsScreen} // Doğru içe aktarılmış bileşeni kullanın
+            options={{ title: "Settings Screen" }}
+          />
+          <Stack.Screen
+            name="EditProfileScreen"
+            component={EditProfileScreen} // Doğru içe aktarılmış bileşeni kullanın
+            options={{ title: "Edit Profile Screen" }}
           />
           <Stack.Screen
             name="ResetPasswordScreen"

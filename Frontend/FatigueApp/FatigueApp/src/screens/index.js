@@ -7,3 +7,5 @@ export { default as AddCard } from "./AddCard";
 export { default as Profile } from "./Profile";
 export { default as CrashDetection } from "./CrashDetection";
 export { default as FatigueDetection } from "./FatigueDetection";
+export { default as SettingsScreen } from "./SettingsScreen";
+export { default as EditProfileScreen } from "./EditProfileScreen.js";
